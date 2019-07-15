@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    hyphens: manual;
+}
+
+.footer {
+    float: bottom;
+}
+
+.frontpage-img {
+    height: 90px;
+}
+
+.frontpage-bg {
+    background-image:url(http://www.tannlegeoyen.no/wp-content/uploads/2016/12/24063358.jpg);
+    background-size: cover;
+    min-height: 400px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
