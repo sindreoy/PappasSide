@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
 
   <!-- JS -->
-  <script src="https://kit.fontawesome.com/9a210fe2a5.js"></script>
+  <script src="https://kit.fontawesome.com/9a210fe2a5.js"></script> <!-- Icons -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -27,50 +27,59 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
 
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Tannlege Reidar C. Øyen</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Forsiden <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Våre tjenester</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Priser</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Om oss</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
 <!-- Start main content -->
 
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Tannlege Reidar C. Øyen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="frontpage-bg">
-    <div class="jumbotron">
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Forsiden <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="our_services.html">Våre tjenester</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="prices.html">Priser</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Om oss</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <h1 class="display-4">Tannlege Reidar C. Øyen</h1>
-      <p class="lead">Telefon: 33 46 35 65</p>
+  <!-- Section under navbar -->
+  <div>
+    <div class="image-container">
+      <img id="index-image" src="images/brygga.jpg">
+      <div id="index-card">
+
+        <h3>Tannlege</h3>
+        <h4>Reidar C. Øyen</h4>
+        <div id="card-phone">
+          <i class="fas fa-phone-alt text-info"></i>
+          <h5 style="padding-left: 1rem"> 33&nbsp;46 35&nbsp;65</h5>
+        </div>
+      </div>
     </div>
   </div>
 
 
   <div class="container">
-    <div class="row pb-5">
+    <div class="row pt-5 pb-5">
 
       <div class="col-12 col-md-4">
         <img src="images/tann.png" class="img-fluid img-front-page mx-auto d-block frontpage-img" alt="Tann">
@@ -114,15 +123,15 @@
   </div>
 </body>
 
-
+<!-- Footer -->
 <footer class="footer">
   <div class="container pb-5 mb-5">
     <div class="row">
       <div class="col-12">
         <h2 class="text-center pt-5 pb-2">Her finner du oss</h2>
       </div>
-      <div class="col-12 col-md-5">
-        <div id='map' class="mb-2" style='width: inherit; height: 300px; overflow: hidden'>
+      <div class="col-12 col-md-5 pt-5">
+        <div id='map' class="mb-2">
           <script>
             mapboxgl.accessToken = 'pk.eyJ1Ijoic2luZHJlb3kiLCJhIjoiY2p5MzRjNHd0MGViajNub2JjNmYxdXQxeiJ9.HchDF0kiriUhfwxn_llMcQ';
             var map = new mapboxgl.Map({
@@ -131,18 +140,22 @@
               center: [10.229555, 59.127783],
               zoom: 15
             });
+
+            var marker = new mapboxgl.Marker()
+              .setLngLat([10.229555, 59.127783])
+              .addTo(map);
           </script>
         </div>
       </div>
-      <div class="col-12 col-md-7">
-        <h5 class="pb-1"><i class="fas fa-map-marker-alt" style="padding-right: 4.69px"></i>&emsp;Thor Dahls gate 1,
-          3210
-          Sandefjord</h5>
-        <h5 class="pb-1"><i class="fas fa-phone-alt"></i>&emsp;33 46 35 65</h5>
-        <h5 class="pb-1"><i class="far fa-clock"></i>&emsp;Man-fre: 08-16 <br>
+      <div id="index-icons" class="col-12 col-md-7 pt-5 d-flex flex-column justify-content-around">
+        <h5 class="pb-1"><i class="fas fa-map-marker-alt text-info" style="padding-right: 4.69px"></i>&emsp;Thor
+          Dahls gate 1<br>
+          &emsp;&emsp;3210 Sandefjord</h5>
+        <h5 class="pb-1"><i class="fas fa-phone-alt text-info"></i>&emsp;33 46 35 65</h5>
+        <h5 class="pb-1"><i class="far fa-clock text-info"></i>&emsp;Man-fre: 08-16<br>
           &emsp;&emsp;Kveldsåpent etter avtale.</h5>
-        <h5 class="pb-1"><i class="fas fa-wheelchair"></i>&emsp;Tilpasset for rullestol</h5>
-        <h5 class="pb-1"><i class="fas fa-car"></i>&emsp;Kundeparkering</h5>
+        <h5 class="pb-1"><i class="fas fa-wheelchair text-info"></i>&emsp;Tilpasset for rullestol</h5>
+        <h5 class="pb-1"><i class="fas fa-car text-info"></i>&emsp;Kundeparkering</h5>
       </div>
     </div>
   </div>
