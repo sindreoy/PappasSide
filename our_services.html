@@ -1,180 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="no">
+  <head>
+    <title>Tannlege Reidar C. Øyen</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Tannlege Reidar C. Øyen</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
-  <link rel="stylesheet" href="./style.css">
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/9a210fe2a5.js"></script>
+    <!-- Icons -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-  <!-- JS -->
-  <script src="https://kit.fontawesome.com/9a210fe2a5.js"></script> <!-- Icons -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- Mapbox -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Components -->
+    <link href="components/navbar.html" rel="import" />
+  </head>
 
-  <!-- Components -->
-  <link href="components/navbar.html" rel="import" />
-</head>
+  <!-- Start main content -->
 
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Tannlege Reidar C. Øyen</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-
-<!-- Start main content -->
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Tannlege Reidar C. Øyen</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Forsiden</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="our_services.html">Våre tjenester <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="prices.html">Priser</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Om oss</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container">
-    <!-- Tannhelse -->
-    <div class="row pt-5">
-      <div class="col-12 col-md-4 pb-4">
-        <h1 class="display-1 text-center">
-          <i class="image-services fas fa-user-md bg-info text-white"></i>
-        </h1>
-
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Forsiden</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="our_services.html"
+              >Våre tjenester <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prices.html">Priser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Om oss</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-12 col-md-8">
-        <h3>Vår tannklinikk er eksperter på din tannhelse!</h3>
-        <p>Vår tannklinikk tilbyr de fleste former for tannbehandling i Sandefjord,
-          og er installert i nye og moderne lokaler i Thor Dahl-bygget nede på Brygga.
-          En grundig, klinisk undersøkelse er en selvfølge. Både tenner, støttevev
-          (periodontium ) og munnslimhinner blir undersøkt nøye ved alle regelmessige, årlige
-          kontroller.
-        </p>
-      </div>
-    </div>
+    </nav>
 
-    <!-- Tjenester -->
-    <div class="row pt-5">
-
-      <div class="col-12 col-md-8 order-2 order-md-1">
-        <h3>Våre tannleger i Sandefjord utfører følgende tjenester</h3>
-        <div class=" shadow-sm pl-3 pr-3 pb-2 pt-3  mb-5 bg-white rounded">
-          <table class="table table-borderless table-sm">
-            <tbody>
-              <tr>
-                <td>Grundig undersøkelse + planlegging av behandling</td>
-                <td>Kroner / brobehandling + protese</td>
-              </tr>
-              <tr>
-                <td>Rensing av tannsten + periodontitt-behandling</td>
-                <td>Implantatbehandling</td>
-              </tr>
-              <tr>
-                <td>Kirurgisk tannbehandling</td>
-                <td>Vanlig fyllingsterapi</td>
-              </tr>
-              <tr>
-                <td>Rotfylling</td>
-                <td>Tannbleking</td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="container">
+      <!-- Tannhelse -->
+      <div class="row pt-5">
+        <div class="col-12 col-md-4 pb-4">
+          <h1 class="display-1 text-center">
+            <i class="image-services fas fa-user-md bg-info text-white"></i>
+          </h1>
+        </div>
+        <div class="col-12 col-md-8">
+          <h3>Vår tannklinikk er eksperter på din tannhelse!</h3>
+          <p>
+            Vår tannklinikk tilbyr de fleste former for tannbehandling i
+            Sandefjord, og er installert i nye og moderne lokaler i Thor
+            Dahl-bygget nede på Brygga. En grundig, klinisk undersøkelse er en
+            selvfølge. Både tenner, støttevev (periodontium ) og munnslimhinner
+            blir undersøkt nøye ved alle regelmessige, årlige kontroller.
+          </p>
         </div>
       </div>
 
-      <div class="col-12 col-md-4 order-md-2 order-1 pb-4">
-        <h1 class="display-1 text-center">
-          <i class="image-services fas fa-clipboard-list bg-info text-white"></i>
-        </h1>
+      <!-- Tjenester -->
+      <div class="row pt-5">
+        <div class="col-12 col-md-8 order-2 order-md-1">
+          <h3>Våre tannleger i Sandefjord utfører følgende tjenester</h3>
+          <div class=" shadow-sm pl-3 pr-3 pb-2 pt-3  mb-5 bg-white rounded">
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr>
+                  <td>Grundig undersøkelse + planlegging av behandling</td>
+                  <td>Kroner / brobehandling + protese</td>
+                </tr>
+                <tr>
+                  <td>Rensing av tannsten + periodontitt-behandling</td>
+                  <td>Implantatbehandling</td>
+                </tr>
+                <tr>
+                  <td>Kirurgisk tannbehandling</td>
+                  <td>Vanlig fyllingsterapi</td>
+                </tr>
+                <tr>
+                  <td>Rotfylling</td>
+                  <td>Tannbleking</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 order-md-2 order-1 pb-4">
+          <h1 class="display-1 text-center">
+            <i
+              class="image-services fas fa-clipboard-list bg-info text-white"
+            ></i>
+          </h1>
+        </div>
       </div>
 
+      <!-- Trygg behandling -->
+      <div class="row pt-5">
+        <div class="col-12 col-md-4 pb-4">
+          <h1 class="display-1 text-center">
+            <i class="image-services far fa-heart bg-info text-white"></i>
+          </h1>
+        </div>
+        <div class="col-12 col-md-8">
+          <h3>Vi gir deg en trygg og behagelig behandling</h3>
+          Vi har en velutstyrt tannklinikk med hyggelige medarbeidere som ønsker
+          å gi en trygg og omsorgsfull opplevelse under selve tannbehandlingen.
+          Alle som ønsker det får lokalbedøvelse under tannbehandling. Pasienter
+          med spesielle ønsker eller behov videresendes straks til
+          spesialklinikk / munn-kjeve-avdeling på sykehus om nødvendig.
+        </div>
+      </div>
+
+      <!-- Refusjon fra HELFO -->
+      <div class="row pt-5">
+        <div class="col-12 col-md-8 order-2 order-md-1">
+          <h3>Automatisk refusjon fra HELFO</h3>
+          Alle tjenester som gir refusjon fra HELFO trekkes automatisk ut ved
+          betaling. Vår tannklinikk har direkte oppgjør med HELFO, noe som er
+          enkelt for deg som pasient. Du slipper alt arbeid med å søke om
+          tilbakebetaling av ditt rettmessige krav. Studentrabatt gis ved
+          fremvisning av gyldig studentkort.
+        </div>
+        <div class="col-12 col-md-4 pb-4 order-1 order-md-2">
+          <h1 class="display-1 text-center">
+            <i
+              class="image-services fas fa-hand-holding-usd bg-info text-white"
+            ></i>
+          </h1>
+        </div>
+      </div>
+
+      <!-- Implantat -->
+      <div class="row pt-5">
+        <div class="col-12 col-md-4 pb-4">
+          <h1 class="display-1 text-center">
+            <i class="image-services fas fa-tooth bg-info text-white"></i>
+          </h1>
+        </div>
+        <div class="col-12 col-md-8">
+          <h3>Implantatbehandling</h3>
+          Implantatbehandling inkluderer både selve kirurgi + protetisk
+          erstatning med HELFO refusjon. Pasienter hos oss betaler kun egenandel
+          når krav om refusjon er berettiget. Begge deler utføres av tannleger
+          med lang, bred kompetanse i dette feltet. Klinikken vår har langt,
+          regelmessig samarbeid med de beste kirurger innen oral-kirurgisk
+          behandling. Dette omfatter også mer komplisert benoppbygning i
+          vanskelige kasus med bentap. Våre tannleger bruker kun produkter av
+          høyeste kvalitet som er vitenskapelig anerkjent.
+        </div>
+      </div>
+
+      <!-- End container-->
     </div>
-
-    <!-- Trygg behandling -->
-    <div class="row pt-5">
-      <div class="col-12 col-md-4 pb-4">
-        <h1 class="display-1 text-center">
-          <i class="image-services far fa-heart bg-info text-white"></i>
-        </h1>
-      </div>
-      <div class="col-12 col-md-8">
-        <h3>Vi gir deg en trygg og behagelig behandling</h3>
-        Vi har en velutstyrt tannklinikk med hyggelige medarbeidere som ønsker å gi
-        en trygg og omsorgsfull opplevelse under selve tannbehandlingen. Alle som
-        ønsker det får lokalbedøvelse under tannbehandling. Pasienter med spesielle
-        ønsker eller behov videresendes straks til spesialklinikk /
-        munn-kjeve-avdeling på sykehus om nødvendig.
-      </div>
-    </div>
-
-    <!-- Refusjon fra HELFO -->
-    <div class="row pt-5">
-      <div class="col-12 col-md-8 order-2 order-md-1">
-        <h3>Automatisk refusjon fra HELFO</h3>
-        Alle tjenester som gir refusjon fra HELFO trekkes automatisk ut ved betaling.
-        Vår tannklinikk har direkte oppgjør med HELFO, noe som er enkelt for deg som
-        pasient. Du slipper alt arbeid med å søke om tilbakebetaling av ditt
-        rettmessige krav. Studentrabatt gis ved fremvisning av gyldig studentkort.
-      </div>
-      <div class="col-12 col-md-4 pb-4 order-1 order-md-2">
-        <h1 class="display-1 text-center">
-          <i class="image-services fas fa-hand-holding-usd bg-info text-white"></i>
-        </h1>
-      </div>
-    </div>
-
-    <!-- Implantat -->
-    <div class="row pt-5">
-      <div class="col-12 col-md-4 pb-4">
-        <h1 class="display-1 text-center">
-          <i class="image-services fas fa-tooth bg-info text-white"></i>
-        </h1>
-      </div>
-      <div class="col-12 col-md-8">
-        <h3>Implantatbehandling</h3>
-        Implantatbehandling inkluderer både selve kirurgi + protetisk erstatning med
-        HELFO refusjon. Pasienter hos oss betaler kun egenandel når krav om refusjon
-        er berettiget. Begge deler utføres av tannleger med lang, bred kompetanse i
-        dette feltet. Klinikken vår har langt, regelmessig samarbeid med de beste
-        kirurger innen oral-kirurgisk behandling. Dette omfatter også mer komplisert
-        benoppbygning i vanskelige kasus med bentap. Våre tannleger bruker kun
-        produkter av høyeste kvalitet som er vitenskapelig anerkjent.
-      </div>
-    </div>
-
-
-    <!-- End container-->
-  </div>
-  <!-- <div class="container pt-3">
+    <!-- <div class="container pt-3">
             <h2>Vår tannklinikk er eksperter på din tannhelse!</h2>
             <p>Vår tannklinikk tilbyr de fleste former for tannbehandling i Sandefjord,
               og er installert i nye og moderne lokaler i Thor Dahl-bygget nede på Brygga.
@@ -223,45 +248,66 @@
               rettmessige krav. Studentrabatt gis ved fremvisning av gyldig studentkort.
             </p>
       </div> -->
+  </body>
 
-</body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container pb-5 mb-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center pt-5 pb-2">Her finner du oss</h2>
+        </div>
+        <div class="col-12 col-md-5 pt-5">
+          <div id="map" class="mb-2">
+            <script>
+              mapboxgl.accessToken =
+                "pk.eyJ1Ijoic2luZHJlb3kiLCJhIjoiY2p5MzRjNHd0MGViajNub2JjNmYxdXQxeiJ9.HchDF0kiriUhfwxn_llMcQ";
+              var map = new mapboxgl.Map({
+                container: "map",
+                style: "mapbox://styles/mapbox/streets-v11",
+                center: [10.229555, 59.127783],
+                zoom: 15
+              });
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container pb-5 mb-5">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center pt-5 pb-2">Her finner du oss</h2>
-      </div>
-      <div class="col-12 col-md-5 pt-5">
-        <div id='map' class="mb-2">
-          <script>
-            mapboxgl.accessToken = 'pk.eyJ1Ijoic2luZHJlb3kiLCJhIjoiY2p5MzRjNHd0MGViajNub2JjNmYxdXQxeiJ9.HchDF0kiriUhfwxn_llMcQ';
-            var map = new mapboxgl.Map({
-              container: 'map',
-              style: 'mapbox://styles/mapbox/streets-v11',
-              center: [10.229555, 59.127783],
-              zoom: 15
-            });
-
-            var marker = new mapboxgl.Marker()
-              .setLngLat([10.229555, 59.127783])
-              .addTo(map);
-          </script>
+              var marker = new mapboxgl.Marker()
+                .setLngLat([10.229555, 59.127783])
+                .addTo(map);
+            </script>
+          </div>
+        </div>
+        <div
+          id="index-icons"
+          class="col-12 col-md-7 pt-5 d-flex flex-column justify-content-around"
+        >
+          <h5 class="pb-1">
+            <i
+              class="fas fa-map-marker-alt text-info"
+              style="padding-right: 4.69px"
+            ></i
+            >&emsp;Thor Dahls gate 1<br />
+            &emsp;&emsp;3210 Sandefjord
+          </h5>
+          <h5 class="pb-1">
+            <i class="fas fa-phone-alt text-info"></i>&emsp;33 46 35 65
+          </h5>
+          <h5 class="pb-1">
+            <div style="display: flex; flex-direction: row;">
+              <i class="far fa-clock text-info"></i>&emsp;
+              <div>
+                Kun åpent for øyeblikkelig hjelp frem til 14. april.
+                <br />Telefonvakt mandag og torsdag 10:00 - 14:00
+              </div>
+            </div>
+          </h5>
+          <h5 class="pb-1">
+            <i class="fas fa-wheelchair text-info"></i>&emsp;Tilpasset for
+            rullestol
+          </h5>
+          <h5 class="pb-1">
+            <i class="fas fa-car text-info"></i>&emsp;Kundeparkering
+          </h5>
         </div>
       </div>
-      <div id="index-icons" class="col-12 col-md-7 pt-5 d-flex flex-column justify-content-around">
-        <h5 class="pb-1"><i class="fas fa-map-marker-alt text-info" style="padding-right: 4.69px"></i>&emsp;Thor
-          Dahls gate 1<br>
-          &emsp;&emsp;3210 Sandefjord</h5>
-        <h5 class="pb-1"><i class="fas fa-phone-alt text-info"></i>&emsp;33 46 35 65</h5>
-        <h5 class="pb-1"><i class="far fa-clock text-info"></i>&emsp;Man-fre: 08-16<br>
-          &emsp;&emsp;Kveldsåpent etter avtale.</h5>
-        <h5 class="pb-1"><i class="fas fa-wheelchair text-info"></i>&emsp;Tilpasset for rullestol</h5>
-        <h5 class="pb-1"><i class="fas fa-car text-info"></i>&emsp;Kundeparkering</h5>
-      </div>
     </div>
-  </div>
-</footer>
-
+  </footer>
 </html>

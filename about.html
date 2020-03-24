@@ -1,229 +1,289 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="no">
+  <head>
+    <title>Om oss</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Om oss</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
-  <link rel="stylesheet" href="./style.css">
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/9a210fe2a5.js"></script>
+    <!-- Icons -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-  <!-- JS -->
-  <script src="https://kit.fontawesome.com/9a210fe2a5.js"></script> <!-- Icons -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- Mapbox -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Components -->
+    <link href="components/navbar.html" rel="import" />
+  </head>
 
-  <!-- Components -->
-  <link href="components/navbar.html" rel="import" />
-</head>
+  <!-- Start main content -->
 
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Tannklinikken Reidar C. Øyen</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-
-<!-- Start main content -->
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Tannlege Reidar C. Øyen</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Forsiden</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="our_services.html">Våre tjenester <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="prices.html">Priser</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Om oss</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container pt-5 mt-2 pb-5">
-    <h1 class="pb-3">Om oss</h1>
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <img src=/images/employees/reidar_iselin_lene.png class="image-about">
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Forsiden</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="our_services.html"
+              >Våre tjenester <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prices.html">Priser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Om oss</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-12 col-md-6">
-        <h3 class="pb-3">Velkommen til vår tannklinikk på brygga i Sandefjord!</h3>
-        <p>
-          Vi ønsker både gamle og nye pasienter velkommen til vår moderne tannklinikk i Thor Dahlsgate 1-5 på brygga i
-          Sandefjord.
-        </p>
+    </nav>
 
-        <p>
-          Vi har lang klinisk erfaring med bred kompetanse innen privat tannhelse, og har knyttet til oss flere ulike
-          spesialister innen tannlegebehandling.
-        </p>
-
-        <p>
-          Vårt tannhelseteam består av erfarne tannleger , tannpleier og tannhelsesekretærer som ønsker å gjøre
-          tannlegebesøket hos oss til en hyggelig opplevelse.
-        </p>
-
-        <p>
-          Våre spesialister innen kirurgi og tannregulering har lang erfaring med mange års samarbeid.
-        </p>
-
-        <p>
-          Alle pasienter med krav om refusjon fra HELFO betaler kun egenandel hos oss. Alle våre tannleger og tannpleier
-          har direkte oppgjør med HELFO, noe som oppleves som behagelig og enkelt for våre brukere.
-        </p>
-
-        <p>
-          Studenter får 30 % rabatt ved fremvisning av gyldig studentbevis.
-        </p>
-
-        <p>
-          Våre åpningstider: Mandag-fredag kl 0800-1600. Kveldsåpent etter avtale. Vinterhalvåret holder vi åpent
-          mandager til kl 1900.
-        </p>
-
-        <p>
-          Ring oss for timebestilling på telefon 33&nbsp;46&nbsp;35&nbsp;65
-        </p>
-
-        <p>
-          Kontoradresse: Thor Dahlsgate 1-5, 2 etg. (på brygga) i Sandefjord.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-info mb-5">
-    <div class="container">
-      <div class="row bg-info text-white">
-        <div class="col-12">
-          <h3 class="pt-5 pb-5">Personalet</h3>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src=/images/employees/reidar_2.png class="image-employee mx-auto d-block mb-3">
-          <h5 class="text-center">Dr. Reidar C. Øyen</h5>
-          <h5 class="text-center bold">Tannlege</h5>
-          <p class="pb-5">
-            Reidar er en blid og imøtekommende tannlege, som tar godt vare på sine pasienter. Han er autorisert for
-            implantatprotetisk behandling. Reidar og hans samarbeidspartnere utfører alle typer behandling innen
-            tannhelse.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src=/images/employees/fredrik_vidar.jpg class="image-employee mx-auto d-block mb-3">
-          <h5 class="text-center">Odont. Dr. Fredrik Harald Widar</h5>
-          <h5 class="text-center bold">Kjevespesialist</h5>
-          <p class="pb-5">
-            Fredrik Harald er en dyktig kjevespesialist med spesialistgodkjenning i oral kirurgi og oral medisin, med
-            lang erfaring innen tannhelse.
-          </p>
-
-        </div>
-        <div class="col-12 col-md-4">
-          <img src=/images/employees/ella.png class="image-employee mx-auto d-block mb-3">
-          <h5 class="text-center">Ella Aasrum</h5>
-          <h5 class="text-center bold">Spesialist i kjeveortopedi</h5>
-          <p class="pb-5">
-            Ella er en dyktig spesialist i kjeveortopedi, med utdanning som Cand Odont og spesialist i kjeveortopedi fra
-            Universitetet i Oslo. Hun har erfaring som offentlig tannlege, skoletannlege og kjeveortoped. Ella har
-            jobbet med Reidar C. Øyen siden 2004.
-          </p>
-
-        </div>
-
-        <div class="col-12 col-md-4">
-          <img src=/images/employees/kristi_marie_hilde.png class="image-employee mx-auto d-block mb-3">
-          <h5 class="text-center">Kristi Marie Hilde</h5>
-          <h5 class="text-center bold">Tannpleier</h5>
-          <p class="pb-5">
-            Kristi Marie er en dyktig og imøtekommende tannpleier, med utdanning som tannpleier fra Universitetet i
-            Oslo. Hun har jobbet innen tannhelsetjenesten siden 1985 i Hallingdal, Finnsnes (Troms), Indre Østfold,
-            Larvik og Sandefjord. Hun har jobbet som tannpleier hos Reidar C. Øyen siden 2012.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src=/images/employees/lene_marcussen.png class="image-employee mx-auto d-block mb-3">
-          <h5 class="text-center">Lene Marcussen</h5>
-          <h5 class="text-center bold">Tannhelse-sekretær</h5>
-          <p class="pb-5">
-            Lene er en koslig Sandefjordsjente som har jobbet som tannhelsesekretær siden 1999. Hun tok autorisasjon som
-            privatist for ca 10 år siden. Hun deler sin arbeidstid mellom kjeveortoped Ella Aasrum og tannlege Reidar
-            Øyen.
-          </p>
-
-        </div>
-        <div class="col-12 col-md-4">
-          <img src=/images/employees/iselin_larsen.png class="image-employee mx-auto d-block mb-3">
-          <h5 class="text-center">Iselin Larsen</h5>
-          <h5 class="text-center bold">Tannhelse-sekretær</h5>
-          <p class="pb-5">
-            Iselin er en trivelig og imøtekommende jente, med fullført utdanning som tannhelsesekretær i 2001. Hun har
-            vært ansatt i den offentlige tannhelsetjenesten i 12 år. Iselin har jobbet hos tannlege Øyen siden 2013.
-          </p>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container pb-5 mb-5">
+    <div class="container pt-5 mt-2 pb-5">
+      <h1 class="pb-3">Om oss</h1>
       <div class="row">
-        <div class="col-12">
-          <h2 class="text-center pt-5 pb-2">Her finner du oss</h2>
+        <div class="col-12 col-md-6">
+          <img src=/images/employees/reidar_iselin_lene.png class="image-about">
         </div>
-        <div class="col-12 col-md-5 pt-5">
-          <div id='map' class="mb-2">
-            <script>
-              mapboxgl.accessToken = 'pk.eyJ1Ijoic2luZHJlb3kiLCJhIjoiY2p5MzRjNHd0MGViajNub2JjNmYxdXQxeiJ9.HchDF0kiriUhfwxn_llMcQ';
-              var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/mapbox/streets-v11',
-                center: [10.229555, 59.127783],
-                zoom: 15
-              });
+        <div class="col-12 col-md-6">
+          <h3 class="pb-3">
+            Velkommen til vår tannklinikk på brygga i Sandefjord!
+          </h3>
+          <p>
+            Vi ønsker både gamle og nye pasienter velkommen til vår moderne
+            tannklinikk i Thor Dahlsgate 1-5 på brygga i Sandefjord.
+          </p>
 
-              var marker = new mapboxgl.Marker()
-                .setLngLat([10.229555, 59.127783])
-                .addTo(map);
-            </script>
+          <p>
+            Vi har lang klinisk erfaring med bred kompetanse innen privat
+            tannhelse, og har knyttet til oss flere ulike spesialister innen
+            tannlegebehandling.
+          </p>
+
+          <p>
+            Vårt tannhelseteam består av erfarne tannleger , tannpleier og
+            tannhelsesekretærer som ønsker å gjøre tannlegebesøket hos oss til
+            en hyggelig opplevelse.
+          </p>
+
+          <p>
+            Våre spesialister innen kirurgi og tannregulering har lang erfaring
+            med mange års samarbeid.
+          </p>
+
+          <p>
+            Alle pasienter med krav om refusjon fra HELFO betaler kun egenandel
+            hos oss. Alle våre tannleger og tannpleier har direkte oppgjør med
+            HELFO, noe som oppleves som behagelig og enkelt for våre brukere.
+          </p>
+
+          <p>
+            Studenter får 30 % rabatt ved fremvisning av gyldig studentbevis.
+          </p>
+
+          <p>
+            Våre åpningstider: Mandag-fredag kl 0800-1600. Kveldsåpent etter
+            avtale. Vinterhalvåret holder vi åpent mandager til kl 1900.
+          </p>
+
+          <p>
+            Ring oss for timebestilling på telefon 33&nbsp;46&nbsp;35&nbsp;65
+          </p>
+
+          <p>
+            Kontoradresse: Thor Dahlsgate 1-5, 2 etg. (på brygga) i Sandefjord.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-info mb-5">
+      <div class="container">
+        <div class="row bg-info text-white">
+          <div class="col-12">
+            <h3 class="pt-5 pb-5">Personalet</h3>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src=/images/employees/reidar_2.png class="image-employee
+            mx-auto d-block mb-3">
+            <h5 class="text-center">Dr. Reidar C. Øyen</h5>
+            <h5 class="text-center bold">Tannlege</h5>
+            <p class="pb-5">
+              Reidar er en blid og imøtekommende tannlege, som tar godt vare på
+              sine pasienter. Han er autorisert for implantatprotetisk
+              behandling. Reidar og hans samarbeidspartnere utfører alle typer
+              behandling innen tannhelse.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src=/images/employees/fredrik_vidar.jpg class="image-employee
+            mx-auto d-block mb-3">
+            <h5 class="text-center">Odont. Dr. Fredrik Harald Widar</h5>
+            <h5 class="text-center bold">Kjevespesialist</h5>
+            <p class="pb-5">
+              Fredrik Harald er en dyktig kjevespesialist med
+              spesialistgodkjenning i oral kirurgi og oral medisin, med lang
+              erfaring innen tannhelse.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src=/images/employees/ella.png class="image-employee mx-auto
+            d-block mb-3">
+            <h5 class="text-center">Ella Aasrum</h5>
+            <h5 class="text-center bold">Spesialist i kjeveortopedi</h5>
+            <p class="pb-5">
+              Ella er en dyktig spesialist i kjeveortopedi, med utdanning som
+              Cand Odont og spesialist i kjeveortopedi fra Universitetet i Oslo.
+              Hun har erfaring som offentlig tannlege, skoletannlege og
+              kjeveortoped. Ella har jobbet med Reidar C. Øyen siden 2004.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img src=/images/employees/kristi_marie_hilde.png
+            class="image-employee mx-auto d-block mb-3">
+            <h5 class="text-center">Kristi Marie Hilde</h5>
+            <h5 class="text-center bold">Tannpleier</h5>
+            <p class="pb-5">
+              Kristi Marie er en dyktig og imøtekommende tannpleier, med
+              utdanning som tannpleier fra Universitetet i Oslo. Hun har jobbet
+              innen tannhelsetjenesten siden 1985 i Hallingdal, Finnsnes
+              (Troms), Indre Østfold, Larvik og Sandefjord. Hun har jobbet som
+              tannpleier hos Reidar C. Øyen siden 2012.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src=/images/employees/lene_marcussen.png class="image-employee
+            mx-auto d-block mb-3">
+            <h5 class="text-center">Lene Marcussen</h5>
+            <h5 class="text-center bold">Tannhelse-sekretær</h5>
+            <p class="pb-5">
+              Lene er en koslig Sandefjordsjente som har jobbet som
+              tannhelsesekretær siden 1999. Hun tok autorisasjon som privatist
+              for ca 10 år siden. Hun deler sin arbeidstid mellom kjeveortoped
+              Ella Aasrum og tannlege Reidar Øyen.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src=/images/employees/iselin_larsen.png class="image-employee
+            mx-auto d-block mb-3">
+            <h5 class="text-center">Iselin Larsen</h5>
+            <h5 class="text-center bold">Tannhelse-sekretær</h5>
+            <p class="pb-5">
+              Iselin er en trivelig og imøtekommende jente, med fullført
+              utdanning som tannhelsesekretær i 2001. Hun har vært ansatt i den
+              offentlige tannhelsetjenesten i 12 år. Iselin har jobbet hos
+              tannlege Øyen siden 2013.
+            </p>
           </div>
         </div>
-        <div id="index-icons" class="col-12 col-md-7 pt-5 d-flex flex-column justify-content-around">
-          <h5 class="pb-1"><i class="fas fa-map-marker-alt text-info" style="padding-right: 4.69px"></i>&emsp;Thor
-            Dahls gate 1<br>
-            &emsp;&emsp;3210 Sandefjord</h5>
-          <h5 class="pb-1"><i class="fas fa-phone-alt text-info"></i>&emsp;33 46 35 65</h5>
-          <h5 class="pb-1"><i class="far fa-clock text-info"></i>&emsp;Man-fre: 08-16<br>
-            &emsp;&emsp;Kveldsåpent etter avtale.</h5>
-          <h5 class="pb-1"><i class="fas fa-wheelchair text-info"></i>&emsp;Tilpasset for rullestol</h5>
-          <h5 class="pb-1"><i class="fas fa-car text-info"></i>&emsp;Kundeparkering</h5>
-        </div>
       </div>
     </div>
-  </footer>
 
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container pb-5 mb-5">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center pt-5 pb-2">Her finner du oss</h2>
+          </div>
+          <div class="col-12 col-md-5 pt-5">
+            <div id="map" class="mb-2">
+              <script>
+                mapboxgl.accessToken =
+                  "pk.eyJ1Ijoic2luZHJlb3kiLCJhIjoiY2p5MzRjNHd0MGViajNub2JjNmYxdXQxeiJ9.HchDF0kiriUhfwxn_llMcQ";
+                var map = new mapboxgl.Map({
+                  container: "map",
+                  style: "mapbox://styles/mapbox/streets-v11",
+                  center: [10.229555, 59.127783],
+                  zoom: 15
+                });
+
+                var marker = new mapboxgl.Marker()
+                  .setLngLat([10.229555, 59.127783])
+                  .addTo(map);
+              </script>
+            </div>
+          </div>
+          <div
+            id="index-icons"
+            class="col-12 col-md-7 pt-5 d-flex flex-column justify-content-around"
+          >
+            <h5 class="pb-1">
+              <i
+                class="fas fa-map-marker-alt text-info"
+                style="padding-right: 4.69px"
+              ></i
+              >&emsp;Thor Dahls gate 1<br />
+              &emsp;&emsp;3210 Sandefjord
+            </h5>
+            <h5 class="pb-1">
+              <i class="fas fa-phone-alt text-info"></i>&emsp;33 46 35 65
+            </h5>
+            <h5 class="pb-1">
+              <div style="display: flex; flex-direction: row;">
+                <i class="far fa-clock text-info"></i>&emsp;
+                <div>
+                  Kun åpent for øyeblikkelig hjelp frem til 14. april.
+                  <br />Telefonvakt mandag og torsdag 10:00 - 14:00
+                </div>
+              </div>
+            </h5>
+            <h5 class="pb-1">
+              <i class="fas fa-wheelchair text-info"></i>&emsp;Tilpasset for
+              rullestol
+            </h5>
+            <h5 class="pb-1">
+              <i class="fas fa-car text-info"></i>&emsp;Kundeparkering
+            </h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
