@@ -1,114 +1,127 @@
 body {
-    margin: 0;
-    -webkit-hyphens: manual;
-    -moz-hyphens: manual;
-    hyphens: manual;
-    background-color: #fff;
+  margin: 0;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  hyphens: manual;
+  background-color: #fff;
 }
 
 h5 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .image-services {
-    padding: 40px 40px;
-    border-radius: 50%;
-    min-width: 176px;
-    min-height: 176px;
+  padding: 40px 40px;
+  border-radius: 50%;
+  min-width: 176px;
+  min-height: 176px;
 }
 
 .footer {
-    float: bottom;
+  float: bottom;
 }
 
 .frontpage-img {
-    height: 90px;
+  height: 90px;
 }
 
 .frontpage-bg {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .bold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .image-employee {
-    width: 50%;
-    border-radius: 50%;
-    margin: auto;
+  width: 50%;
+  border-radius: 50%;
+  margin: auto;
 }
 
 .image-about {
-    width: 100%;
+  width: 100%;
 }
 
 /* Set the size of the div element that contains the map */
 #map {
-    height: 300px;  /* The height is 400 pixels */
-    width: inherit;  /* The width is the width of the web page */
-    overflow: hidden;
+  height: 300px; /* The height is 400 pixels */
+  width: inherit; /* The width is the width of the web page */
+  overflow: hidden;
 }
 
 #index-icons {
-    padding-left: 5%;
+  padding-left: 5%;
 }
 
 .image-container {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 #index-image {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
 }
 
 #index-card {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    max-width: 30vw;
-    background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: 600px) {
-   #index-card {
+  #index-card {
     position: relative;
     left: 0;
     top: 0;
     max-width: none;
     padding: 5% 7%;
-   }
+  }
 }
 
 #card-phone {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
 }
 
 p {
-   font-family: apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-   font-weight: 300;
+  font-family: apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
 }
 
 .price-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .price-item .price {
-    padding-left: 5%;
-    white-space: nowrap;
+  padding-left: 5%;
+  white-space: nowrap;
+}
+
+a.position-link {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.position-link:hover {
+  color: black;
+  text-decoration-color: #fc9803;
 }
