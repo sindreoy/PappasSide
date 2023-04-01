@@ -1,193 +1,245 @@
 <!DOCTYPE html>
 <html lang="no">
+  <head>
+    <title>Tannlege Reidar C. Øyen</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Tannlege Reidar C. Øyen</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css" />
-  <link rel="stylesheet" href="./style.css" />
+    <!-- JS -->
+    <script
+      src="https://kit.fontawesome.com/9a210fe2a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icons -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-  <!-- JS -->
-  <script src="https://kit.fontawesome.com/9a210fe2a5.js"></script>
-  <!-- Icons -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- Mapbox -->
-  <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  <!-- Start main content -->
 
-<!-- Start main content -->
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Tannlege Reidar C. Øyen</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Tannlege Reidar C. Øyen</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Forsiden <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vare-tjenester.html">Våre tjenester</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="priser.html">Priser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="om-oss.html">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stillinger.html">Ledige stillinger</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Forsiden <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="vare-tjenester.html">Våre tjenester</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="priser.html">Priser</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="om-oss.html">Om oss</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="stillinger.html">Ledige stillinger</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Section under navbar -->
-  <div>
-    <div class="image-container">
-      <img id="index-image" src="images/brygga.jpg" />
-      <div id="index-card">
-        <h3>Tannlege</h3>
-        <h4>Reidar C. Øyen</h4>
-        <div id="card-phone">
-          <i class="fas fa-phone-alt text-info"></i>
-          <h5 style="padding-left: 1rem;">33&nbsp;46 35&nbsp;65</h5>
+    <!-- Section under navbar -->
+    <div>
+      <div class="image-container">
+        <img id="index-image" src="images/brygga.jpg" />
+        <div id="index-card">
+          <h3>Tannlege</h3>
+          <h4>Reidar C. Øyen</h4>
+          <div class="card-phone">
+            <i class="fas fa-phone-alt text-info card-icon"></i>
+            <h5 style="padding-left: 1rem">33&nbsp;46 35&nbsp;65</h5>
+          </div>
+          <div class="card-phone">
+            <i class="fas fa-circle-info text-info card-icon"></i>
+            <h5 style="padding-left: 1rem">Påskestengt 3.&ndash;10. april</h5>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Our services -->
+    <!-- Our services -->
+    <div class="container">
+      <div class="row pt-5 pb-5">
+        <div class="col-12 col-md-4">
+          <img
+            src="images/tann.png"
+            class="img-fluid img-front-page mx-auto d-block frontpage-img"
+            alt="Tann"
+          />
+          <h2 class="text-center pt-2 pb-2">Tannlege&shy;tjenester</h2>
+          <p class="text-center">
+            Vi tilbyr en rekke tjenester innen tannhelse i Sandefjord, med blant
+            annet tannlegeundersøkelser, fyllingsterapi, kronebro,
+            rotbehandling, implantater, kirurgisk tannbehandling og forebyggende
+            tannpleie.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img
+            src="images/tjenester_eller_kjevespesialist.png"
+            class="img-fluid img-front-page mx-auto d-block frontpage-img"
+            alt="Tjenester"
+          />
+          <h2 class="text-center pt-2 pb-2">Kjeve&shy;spesialist</h2>
+          <p class="text-center">
+            Vår dyktige kjevespesialist utfører kjevekirurgi, tannimplantater og
+            kirurgisk tannbehandling.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img
+            src="images/tann_med_regulering.png"
+            class="img-fluid img-front-page mx-auto d-block frontpage-img"
+            alt="Tann med regulering"
+          />
+          <h2 class="text-center pt-2 pb-2">Tann&shy;pleier</h2>
+          <p class="text-center">
+            Vi har en dyktig tannpleier som utfører forebyggende tannbehandling,
+            tannstensrens og preventiv behandling av tannkjøttslidelser.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student discount -->
+    <div class="bg-info pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-white text-center">
+              <i class="fas fa-user-graduate"></i> 30 % studentrabatt på alle
+              tjenester
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Promovideo -->
   <div class="container">
-    <div class="row pt-5 pb-5">
-      <div class="col-12 col-md-4">
-        <img src="images/tann.png" class="img-fluid img-front-page mx-auto d-block frontpage-img" alt="Tann" />
-        <h2 class="text-center pt-2 pb-2">Tannlege&shy;tjenester</h2>
-        <p class="text-center">
-          Vi tilbyr en rekke tjenester innen tannhelse i Sandefjord, med blant
-          annet tannlegeundersøkelser, fyllingsterapi, kronebro,
-          rotbehandling, implantater, kirurgisk tannbehandling og forebyggende
-          tannpleie.
-        </p>
-      </div>
-
-      <div class="col-12 col-md-4">
-        <img src="images/tjenester_eller_kjevespesialist.png"
-          class="img-fluid img-front-page mx-auto d-block frontpage-img" alt="Tjenester" />
-        <h2 class="text-center pt-2 pb-2">Kjeve&shy;spesialist</h2>
-        <p class="text-center">
-          Vår dyktige kjevespesialist utfører kjevekirurgi, tannimplantater og
-          kirurgisk tannbehandling.
-        </p>
-      </div>
-
-      <div class="col-12 col-md-4">
-        <img src="images/tann_med_regulering.png" class="img-fluid img-front-page mx-auto d-block frontpage-img"
-          alt="Tann med regulering" />
-        <h2 class="text-center pt-2 pb-2">Tann&shy;regulering</h2>
-        <p class="text-center">
-          Vi har en dyktig spesialist på tannregulering hos oss i Sandefjord,
-          hvor vi tilbyr all type tannregulering for ungdom og voksne.
-        </p>
+    <div class="row pt-5 mt-5 pb-5 mb-5">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          width="960"
+          height="540"
+          src="https://www.youtube-nocookie.com/embed/RY0GlnDN0Jw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </div>
 
-  <!-- Student discount -->
-  <div class="bg-info pt-5 pb-5">
-    <div class="container">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container pb-5 mb-5">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-white text-center">
-            <i class="fas fa-user-graduate"></i> 30 % studentrabatt på alle
-            tjenester
-          </h1>
+          <h2 class="text-center pb-2">Her finner du oss</h2>
+        </div>
+        <div class="col-12 col-md-5 pt-5">
+          <div id="map" class="mb-2">
+            <script>
+              mapboxgl.accessToken =
+                "pk.eyJ1Ijoic2luZHJlb3kiLCJhIjoiY2p5MzRjNHd0MGViajNub2JjNmYxdXQxeiJ9.HchDF0kiriUhfwxn_llMcQ";
+              var map = new mapboxgl.Map({
+                container: "map",
+                style: "mapbox://styles/mapbox/streets-v11",
+                center: [10.229555, 59.127783],
+                zoom: 15,
+              });
+
+              var marker = new mapboxgl.Marker()
+                .setLngLat([10.229555, 59.127783])
+                .addTo(map);
+            </script>
+          </div>
+        </div>
+        <div
+          id="index-icons"
+          class="col-12 col-md-7 pt-5 d-flex flex-column justify-content-around"
+        >
+          <h5 class="pb-1">
+            <i
+              class="fas fa-map-marker-alt text-info"
+              style="padding-right: 4.69px"
+            ></i
+            >&emsp;Thor Dahls gate 1<br />
+            &emsp;&emsp;3210 Sandefjord
+          </h5>
+          <h5 class="pb-1">
+            <i class="fas fa-phone-alt text-info"></i>&emsp;33 46 35 65
+          </h5>
+          <h5 class="pb-1">
+            <i class="far fa-clock text-info"></i>&emsp;Man-fre: 08-16<br />
+            &emsp;&emsp;Kveldsåpent etter avtale.
+          </h5>
+          <h5 class="pb-1">
+            <i class="fas fa-wheelchair text-info"></i>&emsp;Tilpasset for
+            rullestol
+          </h5>
+          <h5 class="pb-1">
+            <i class="fas fa-car text-info"></i>&emsp;Kundeparkering
+          </h5>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
-<!-- Promovideo -->
-<div class="container">
-  <div class="row pt-5 mt-5 pb-5 mb-5">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" width="960" height="540"
-        src="https://www.youtube-nocookie.com/embed/RY0GlnDN0Jw" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container pb-5 mb-5">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center pb-2">Her finner du oss</h2>
-      </div>
-      <div class="col-12 col-md-5 pt-5">
-        <div id="map" class="mb-2">
-          <script>
-            mapboxgl.accessToken =
-              "pk.eyJ1Ijoic2luZHJlb3kiLCJhIjoiY2p5MzRjNHd0MGViajNub2JjNmYxdXQxeiJ9.HchDF0kiriUhfwxn_llMcQ";
-            var map = new mapboxgl.Map({
-              container: "map",
-              style: "mapbox://styles/mapbox/streets-v11",
-              center: [10.229555, 59.127783],
-              zoom: 15,
-            });
-
-            var marker = new mapboxgl.Marker()
-              .setLngLat([10.229555, 59.127783])
-              .addTo(map);
-          </script>
-        </div>
-      </div>
-      <div id="index-icons" class="col-12 col-md-7 pt-5 d-flex flex-column justify-content-around">
-        <h5 class="pb-1">
-          <i class="fas fa-map-marker-alt text-info" style="padding-right: 4.69px;"></i>&emsp;Thor Dahls gate 1<br />
-          &emsp;&emsp;3210 Sandefjord
-        </h5>
-        <h5 class="pb-1">
-          <i class="fas fa-phone-alt text-info"></i>&emsp;33 46 35 65
-        </h5>
-        <h5 class="pb-1">
-          <i class="far fa-clock text-info"></i>&emsp;Man-fre: 08-16<br />
-          &emsp;&emsp;Kveldsåpent etter avtale.
-        </h5>
-        <h5 class="pb-1">
-          <i class="fas fa-wheelchair text-info"></i>&emsp;Tilpasset for
-          rullestol
-        </h5>
-        <h5 class="pb-1">
-          <i class="fas fa-car text-info"></i>&emsp;Kundeparkering
-        </h5>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 </html>
