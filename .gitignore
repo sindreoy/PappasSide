@@ -1,3 +1,4 @@
 .vscode/*
 *.xd
 *.DS_Store
+debug.log
